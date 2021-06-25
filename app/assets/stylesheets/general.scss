@@ -1,15 +1,34 @@
 // Color Scheme
-
 .color-bg-white {
-  background-color: #fdfdfd;
+  background-color: #f7f9fb;
+}
+
+.color-bg-black {
+  background-color: #101419;
 }
 
 .color-bg-red {
-  background-color: #720909;
+  background-color: #984447;
 }
 
 .color-bg-blue {
-  background-color: #0c0c53;
+  background-color: #476c9b;
+}
+
+.color-bg-lt-blue {
+  background-color: #b6dfe8;
+}
+
+.color-bg-green {
+  background-color: #98b9ab;
+}
+
+.color-bg-orange {
+  background-color: #dc602e;
+}
+
+.color-bg-purple {
+  background-color: #413c58;
 }
 
 // General Page Setup
@@ -22,18 +41,16 @@ html {
 }
 
 body {
-  font-family: 'Bitter', serif;
-  font-size: 1.2em;
+  background-color: white;
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.4rem;
   color: #101419;
   height: 100%;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-body > footer {
-    margin-top: auto;
+  overflow-x: hidden;
 }
 
 .content {
