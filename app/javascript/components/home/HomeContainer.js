@@ -71,19 +71,36 @@ const HomeContainer = () => {
   };
 
   return (
-    <div className="columns">
-      <div className="column is-narrow color-bg-white">
-        <div className="left-nav-bar">
-          <SearchBar />
-          <div className="flex-column">
-            <ErrorList errors={errors} />
-            <Filter filterCampgrounds={filterCampgrounds} />
+    <div>
+      <section className="hero is-link is-fullheight-with-navbar border-bottom">
+        <div className="hero-body landing-image">
+          <div className="container has-text-centered opacity-callout">
+            <p className="color-black">Welcome to Northeast Campground Reviews!</p>
+            <p className="color-black">
+              Below you can view all the campgrounds we've been to in the
+              northeast so far! We include our review of the campground, general
+              information, and photos of hte campground and surrounding area. We
+              hope this information is useful for those camping in the
+              Northeast. We'll be adding new campground reviews and updating
+              existing ones every year!
+            </p>
           </div>
         </div>
-      </div>
-      <div className="column color-bg-white">
-        <div className="container campground-tile-container index-scrollable">
-          {campgroundTiles}
+      </section>
+      <div className="columns border-top">
+        <div className="column is-narrow color-bg-white">
+          <div className="left-nav-bar">
+            <SearchBar />
+            <div className="flex-column">
+              <ErrorList errors={errors} />
+              <Filter filterCampgrounds={filterCampgrounds} />
+            </div>
+          </div>
+        </div>
+        <div className="column color-bg-white">
+          <div className="container campground-tile-container index-scrollable">
+            {campgroundTiles}
+          </div>
         </div>
       </div>
     </div>
