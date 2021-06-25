@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top has-navbar-fixed-bottom">
+  <head>
+    <title>NE Campground Reviews</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400;1,600;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,800;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+    <%- flash.each do |key, value| -%>
+      <div class="mt-6 p-sm flash flash-<%= key %>">
+        <%= value %>
+      </div>
+    <%- end -%>
+
+    <%= yield %>
+
+    <%- if Rails.env.development? || Rails.env.test? -%> 
+      <%= javascript_tag do %>
+        window.railsEnv = '<%= Rails.env %>'
+      <%- end -%>
+    <%- end -%>
+    <%= javascript_pack_tag 'index' %>
+  </body>
+</html>
