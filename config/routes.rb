@@ -3,7 +3,9 @@
 Rails.application.routes.draw do
   devise_for :users, path: 'admin', path_names: { sign_in: 'login', sign_out: 'logout' }
   root 'homepages#index'
-  get '/campgrounds', to: 'homes#index'
+  get '/campgrounds', to: 'homepages#index'
+  get '/about', to: "homepages#index"
+  get '/camper', to: "homepages#index"
 
   namespace :api do
     namespace :v1 do
