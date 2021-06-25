@@ -14,6 +14,8 @@ class CreateCampgrounds < ActiveRecord::Migration[6.1]
       t.boolean :dump_station,      null: false, default: false
       t.boolean :bathrooms,         null: false, default: false
       t.boolean :showers,           null: false, default: false
+      t.string :image_name,               null: false
+      t.integer :image_num,               null: false
 
       t.timestamps
     end

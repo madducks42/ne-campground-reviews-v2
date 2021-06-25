@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 2021_06_25_014711) do
     t.boolean "dump_station", default: false, null: false
     t.boolean "bathrooms", default: false, null: false
     t.boolean "showers", default: false, null: false
+    t.string "image_name", null: false
+    t.integer "image_num", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

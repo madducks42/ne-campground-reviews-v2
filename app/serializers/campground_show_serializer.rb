@@ -5,6 +5,8 @@ class CampgroundShowSerializer < ActiveModel::Serializer
               :caption, 
               :location,
               :zip_code,
+              :image_name,
+              :image_num,
               :campground_link,
               :dogs_allowed, 
               :electric_hookups, 
