@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/about', to: "homepages#index"
   get '/camper', to: "homepages#index"
 
+  get '/campgrounds/:id', to: 'homepages#index'
+
   namespace :api do
     namespace :v1 do
       post 'campgrounds/search', to: 'campgrounds#search'

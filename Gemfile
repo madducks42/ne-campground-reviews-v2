@@ -62,3 +62,7 @@ gem 'devise'
 # Lightbox gallery
 gem 'lightbox2-rails'
 gem 'jquery-rails'
+
+# Active Records
+gem 'active_model_serializers'
+gem 'activemodel-serializers-xml'
