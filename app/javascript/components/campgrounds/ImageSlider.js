@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { SliderData } from './SliderData';
 import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from 'react-icons/io5';
 
 const ImageSlider = ({ slides }) => {
@@ -22,7 +21,7 @@ const ImageSlider = ({ slides }) => {
     <section className='slider'>
       <IoArrowBackCircleOutline className='left-arrow' onClick={prevSlide} />
       <IoArrowForwardCircleOutline className='right-arrow' onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
+      {slides.map((slide, index) => {
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}

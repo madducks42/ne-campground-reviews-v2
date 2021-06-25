@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import ImageSlider from "./ImageSlider";
-import { SliderData } from "./SliderData";
 import ReviewTile from "./ReviewTile";
 import MapTile from "./MapTile";
 import AmenitiesTile from "./AmenitiesTile";
-// import ErrorList from "../utilities/ErrorList";
 
 import { getCampgroundData } from "./fetches/CampgroundData";
 
@@ -16,7 +14,6 @@ const CampgroundContainer = (props) => {
   const [campground, setCampground] = useState({});
   // const [userIsAdmin, setUserIsAdmin] = useState({});
   const [currentUser, setCurrentUser] = useState({});
-  // const [errors, setErrors] = useState({});
 
   useEffect(() => {
     getCampgroundData(id).then((body) => {
@@ -28,13 +25,20 @@ const CampgroundContainer = (props) => {
     });
   }, []);
 
+  let sliderData = []
+  let i = 1
+  while (i < campground.image_num) {
+    sliderData.push({ image: `https://ne-campground-reviews.s3.amazonaws.com/${campground.image_name}/${campground.image_name}-${i}.jpg` })
+    i++;
+  }
+
   return (
     <div className="container">
       <div className="mb-6">
         <h1 className="has-text-centered is-size-1 has-text-weight-semibold font-red mb-6 mt-6">
           {campground.name}
         </h1>
-        <ImageSlider slides={SliderData} />
+        { sliderData?.length > 0 && <ImageSlider slides={sliderData} /> }
         <div className="columns">
           <div className="column">
             <ReviewTile
