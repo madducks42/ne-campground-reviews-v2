@@ -1,0 +1,43 @@
+// Left Nav Bar
+.left-nav-bar {
+  background-color:#f7f9fb;
+  padding: 20px;
+}
+
+// Search Section
+.search-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 150px;
+}
+
+// Filter Section
+.checkbox-label {
+  font-size: 1.2rem;
+}
+
+.checkbox-input {
+  margin-left: 10px;
+}
+
+// Campground Tiles container
+.campground-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F7F9FB;
+  padding: 20px;
+  border-left: 1px solid #ADB5BD;
+}
+
+.index-scrollable {
+  height: 100vh; /* or any value */
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.index-scrollable::-webkit-scrollbar {
+  display: none;
+}
