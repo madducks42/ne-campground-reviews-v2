@@ -1,0 +1,13 @@
+@media screen and (min-width: 641px){
+  .logo {
+    min-height: 13em;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .logo {
+    min-height: 8em;
+    width: auto;
+  }
+}
