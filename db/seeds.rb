@@ -33,7 +33,9 @@ campground_1 =
     potable_water: true,
     dump_station: true,
     bathrooms: true,
-    showers: true
+    showers: true,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 # New York
@@ -56,7 +58,9 @@ campground_2 =
     potable_water: true,
     dump_station: false,
     bathrooms: true,
-    showers: false
+    showers: false,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 campground_6 =
@@ -78,7 +82,9 @@ campground_6 =
     potable_water: true,
     dump_station: true,
     bathrooms: true,
-    showers: true
+    showers: true,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 campground_9 =
@@ -100,7 +106,9 @@ campground_9 =
     potable_water: true,
     dump_station: true,
     bathrooms: true,
-    showers: true
+    showers: true,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 campground_10 =
@@ -122,7 +130,9 @@ campground_10 =
     potable_water: true,
     dump_station: true,
     bathrooms: true,
-    showers: true
+    showers: true,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 # Vermont
@@ -145,7 +155,9 @@ campground_3 =
     potable_water: true,
     dump_station: true,
     bathrooms: true,
-    showers: true
+    showers: true,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 campground_8 =
@@ -167,7 +179,9 @@ campground_8 =
     potable_water: true,
     dump_station: true,
     bathrooms: true,
-    showers: true
+    showers: true,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 # Massachusetts
@@ -190,7 +204,9 @@ campground_4 =
     potable_water: true,
     dump_station: true,
     bathrooms: true,
-    showers: false
+    showers: false,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 campground_5 =
@@ -213,7 +229,9 @@ campground_5 =
     potable_water: true,
     dump_station: true,
     bathrooms: true,
-    showers: true
+    showers: true,
+    image_name: "bear-brook",
+    image_num: 7
   )
 
 campground_7 =
@@ -237,5 +255,7 @@ campground_7 =
     potable_water: true,
     dump_station: false,
     bathrooms: true,
-    showers: false
+    showers: false,
+    image_name: "bear-brook",
+    image_num: 7
   )
