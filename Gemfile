@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # CSS
 gem 'bulma-rails', '~> 0.9.1'
+
+# User Authentication
+gem 'devise'
