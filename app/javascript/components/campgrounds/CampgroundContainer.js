@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import ImageSlider from "./ImageSlider";
+import { SliderData } from "./SliderData";
 import ReviewTile from "./ReviewTile";
 import MapTile from "./MapTile";
 import AmenitiesTile from "./AmenitiesTile";
@@ -32,6 +34,7 @@ const CampgroundContainer = (props) => {
         <h1 className="has-text-centered is-size-1 has-text-weight-semibold font-red mb-6 mt-6">
           {campground.name}
         </h1>
+        <ImageSlider slides={SliderData} />
         <div className="columns">
           <div className="column">
             <ReviewTile
