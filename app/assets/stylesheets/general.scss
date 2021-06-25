@@ -1,0 +1,42 @@
+// Color Scheme
+
+.color-bg-white {
+  background-color: #fdfdfd;
+}
+
+.color-bg-red {
+  background-color: #720909;
+}
+
+.color-bg-blue {
+  background-color: #0c0c53;
+}
+
+// General Page Setup
+html {
+  font-size: 62.5%;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  width: 100%;
+}
+
+body {
+  font-family: 'Bitter', serif;
+  font-size: 1.2em;
+  color: #101419;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > footer {
+    margin-top: auto;
+}
+
+.content {
+  flex: 1 0 auto;
+  width: 100%;
+}

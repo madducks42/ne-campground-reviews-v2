@@ -16,7 +16,36 @@
   </head>
 
   <body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img class="logo" src="https://ne-campground-reviews.s3.amazonaws.com/Logo-color.png">
+        </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end">
+          <a class="navbar-item nav-links" href= "/">
+            Home
+          </a>
+          <a class="navbar-item nav-links" href= "/about">
+            About Us
+          </a>
+          <a class="navbar-item nav-links" href= "/books">
+            Our Camper
+          </a>
+          <a class="navbar-item nav-links" href= "/contact">
+            Contact
+          </a>
+
+        </div>
+      </div>
+    </nav>
 
     <%- flash.each do |key, value| -%>
       <div class="mt-6 p-sm flash flash-<%= key %>">
