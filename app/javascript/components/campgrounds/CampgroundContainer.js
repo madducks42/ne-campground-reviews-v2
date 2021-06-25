@@ -13,7 +13,7 @@ const CampgroundContainer = (props) => {
 
   const [campground, setCampground] = useState({});
   // const [userIsAdmin, setUserIsAdmin] = useState({});
-  const [currentUser, setCurrentUser] = useState({})
+  const [currentUser, setCurrentUser] = useState({});
   // const [errors, setErrors] = useState({});
 
   useEffect(() => {
@@ -34,6 +34,17 @@ const CampgroundContainer = (props) => {
         </h1>
         <div className="columns">
           <div className="column">
+            <ReviewTile
+              key={campground.id}
+              campgroundLink={campground.campground_link}
+              name={campground.name}
+              review={campground.review}
+              location={campground.location}
+            />
+          </div>
+        </div>
+        <div className="columns info-container">
+          <div className="column">
             <div className="amenities-container">
               <div>
                 <AmenitiesTile
@@ -50,19 +61,6 @@ const CampgroundContainer = (props) => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="columns">
-          <div className="column">
-            <ReviewTile
-              key={campground.id}
-              campgroundLink={campground.campground_link}
-              name={campground.name}
-              review={campground.review}
-              location={campground.location}
-            />
-          </div>
-        </div>
-        <div className="columns info-container">
           <div className=" column map-container">
             <MapTile />
           </div>
