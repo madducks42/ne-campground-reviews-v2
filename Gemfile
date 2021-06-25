@@ -58,3 +58,7 @@ gem 'bulma-rails', '~> 0.9.1'
 
 # User Authentication
 gem 'devise'
+
+# Lightbox gallery
+gem 'lightbox2-rails'
+gem 'jquery-rails'

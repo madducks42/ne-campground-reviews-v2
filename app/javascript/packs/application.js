@@ -9,4 +9,6 @@ import * as ActiveStorage from "@rails/activestorage"
 Rails.start()
 ActiveStorage.start()
 
+require("jquery")
 require("packs/navmenu")
+require("packs/lightbox")
