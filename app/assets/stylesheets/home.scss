@@ -40,12 +40,12 @@
   border-left: 1px solid #ADB5BD;
 }
 
-.index-scrollable {
-  height: 100vh; /* or any value */
-  overflow-y: auto;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+// .index-scrollable {
+//   height: 100vh; /* or any value */
+//   overflow-y: auto;
+//   -ms-overflow-style: none;  /* IE and Edge */
+//   scrollbar-width: none;  /* Firefox */
+// }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .index-scrollable::-webkit-scrollbar {

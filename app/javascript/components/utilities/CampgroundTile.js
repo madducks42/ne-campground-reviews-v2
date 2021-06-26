@@ -11,17 +11,17 @@ const tileImage = getTileImage(props.name)
     <div className="mr-2 ml-2 mt-2 mb-2">
       <div className="card">
         <div className="card-image">
-          <figure className="image is-4by3">
+          <figure className="image">
             <img src={tileImage} alt="Campground" />
           </figure>
         </div>
         <div className="card-content">
           <div className="media">
             <div className="media-content">
-              <p className="card-title">
+              <p className="card-title has-text-centered">
                 <Link className="font-red" to={`/campgrounds/${props.id}`}>{props.name}</Link>
               </p>
-              <p className="subtitle is-6">{props.location}</p>
+              <p className="subtitle is-6 has-text-centered">{props.location}</p>
             </div>
           </div>
           <div className="content">

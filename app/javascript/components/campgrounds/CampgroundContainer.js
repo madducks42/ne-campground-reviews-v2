@@ -12,22 +12,18 @@ const CampgroundContainer = (props) => {
   const id = props.match.params.id;
 
   const [campground, setCampground] = useState({});
-  // const [userIsAdmin, setUserIsAdmin] = useState({});
-  const [currentUser, setCurrentUser] = useState({});
+  const [userIsAdmin, setUserIsAdmin] = useState({});
 
   useEffect(() => {
     getCampgroundData(id).then((body) => {
       setCampground(body);
-      // setUserIsAdmin(body.userIsAdmin);
-      if (body.currentUser != null) {
-        setCurrentUser(body.currentUser);
-      }
+      setUserIsAdmin(body.userIsAdmin);
     });
   }, []);
-
+  
   let sliderData = []
   let i = 1
-  while (i < campground.image_num) {
+  while (i <= campground.image_num) {
     sliderData.push({ image: `https://ne-campground-reviews.s3.amazonaws.com/${campground.image_name}/${campground.image_name}-${i}.jpg` })
     i++;
   }
@@ -72,16 +68,16 @@ const CampgroundContainer = (props) => {
             <MapTile />
           </div>
         </div>
-        {currentUser.role === "admin" && (
-          <div className="columns admin-flex">
+        {userIsAdmin === true && (
+          <div className="columns devise-flex">
             <Link
-              className="admin-link"
+              className="button devise-buttons"
               to={`/campgrounds/${campground.id}/update`}
             >
               Update Campground
             </Link>
             <Link
-              className="admin-link"
+              className="button devise-buttons"
               to={`/campgrounds/${campground.id}/destroy`}
             >
               Delete Campground

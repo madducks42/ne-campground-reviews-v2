@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import SearchBar from "./SearchBar";
 import Filter from "./Filter";
@@ -7,6 +8,7 @@ import ErrorList from "../utilities/ErrorList";
 
 const HomeContainer = () => {
   const [campgrounds, setCampgrounds] = useState([]);
+  const [userIsAdmin, setUserIsAdmin] = useState({});
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
@@ -25,6 +27,9 @@ const HomeContainer = () => {
       })
       .then((body) => {
         setCampgrounds(body);
+        if (body[0].userIsAdmin) {
+          setUserIsAdmin(body[0].userIsAdmin);
+        }
       })
       .catch((error) => console.error(`Error in fetch: ${error.message}`));
   }, []);
@@ -75,14 +80,16 @@ const HomeContainer = () => {
       <section className="hero is-link is-fullheight-with-navbar border-bottom">
         <div className="hero-body landing-image">
           <div className="container has-text-centered opacity-callout">
-            <p className="color-black">Welcome to Northeast Campground Reviews!</p>
+            <p className="color-black">
+              Welcome to Northeast Campground Reviews!
+            </p>
             <p className="color-black">
               Below you can view all the campgrounds we&apos;ve been to in the
               northeast so far! We include our review of the campground, general
               information, and photos of the campground and surrounding area. We
               hope this information is useful for those camping in the
-              Northeast. We&apos;ll be adding new campground reviews and updating
-              existing ones every year!
+              Northeast. We&apos;ll be adding new campground reviews and
+              updating existing ones every year!
             </p>
           </div>
         </div>
@@ -98,7 +105,14 @@ const HomeContainer = () => {
           </div>
         </div>
         <div className="column color-bg-white">
-          <div className="container campground-tile-container index-scrollable">
+          {userIsAdmin === true && (
+            <div className="columns devise-flex">
+              <Link className="button devise-buttons" to="/campgrounds/new">
+                Update Campground
+              </Link>
+            </div>
+          )}
+          <div className="container campground-tile-container">
             {campgroundTiles}
           </div>
         </div>
