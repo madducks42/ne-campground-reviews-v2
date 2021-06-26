@@ -6,6 +6,9 @@ import AboutUs from "./about/AboutUs";
 import CamperContainer from "./camper/CamperContainer"
 
 import CampgroundContainer from "./campgrounds/CampgroundContainer"
+import NewCampgroundForm from "./admin/NewCampgroundForm";
+import UpdateCampgroundForm from "./admin/UpdateCampgroundForm";
+import DestroyCampground from "./admin/DestroyCampground";
 
 export const App = () => {
   return (
@@ -15,10 +18,21 @@ export const App = () => {
         <Route exact path="/campgrounds" component={HomeContainer} />
         <Route exact path="/about" component={AboutUs} />
         <Route exact path="/camper" component={CamperContainer} />
+        <Route exact path="/campgrounds/new" component={NewCampgroundForm} />
         <Route
           exact
           path="/campgrounds/:id"
           component={CampgroundContainer}
+        />
+        <Route
+          exact
+          path="/campgrounds/:id/destroy"
+          component={DestroyCampground}
+        />
+        <Route
+          exact
+          path="/campgrounds/:id/update"
+          component={UpdateCampgroundForm}
         />
       </Switch>
     </BrowserRouter>

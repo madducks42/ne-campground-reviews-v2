@@ -28,9 +28,10 @@ class CampgroundShowSerializer < ActiveModel::Serializer
 
   def userIsAdmin
     if current_user.nil?
-      false
+      return false
     else
       current_user.role == "admin"
+      return true
     end
   end
   

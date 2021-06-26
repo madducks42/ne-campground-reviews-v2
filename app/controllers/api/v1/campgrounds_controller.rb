@@ -1,6 +1,6 @@
 class Api::V1::CampgroundsController < ApiController
-  before_action :authorize_user, except: [:index, :show, :search, :filter]
-  
+  # before_action :authorize_user, except: [:index, :show, :search, :filter]
+
   AMENITIES = [
     {js: 'dogsAllowed', ruby: 'dogs_allowed'},
     {js: 'electricHookups', ruby: 'electric_hookups'},
@@ -107,13 +107,7 @@ class Api::V1::CampgroundsController < ApiController
   protected
 
   def campground_params
-    params.require(:campground).permit([:name, :caption, :description, :location, :zip_code, :campground_link, :dogs_allowed, :electric_hookups, :water_hookups, :potable_water, :dump_station, :bathrooms, :showers])
-  end
-
-  def authorize_user
-    if !user_signed_in? || !current_user.admin?
-      redirect_to root_path
-    end
+    params.require(:campground).permit([:name, :caption, :review, :location, :zip_code, :campground_link, :dogs_allowed, :electric_hookups, :water_hookups, :potable_water, :dump_station, :bathrooms, :showers, :image_name, :image_num ])
   end
 
 end
