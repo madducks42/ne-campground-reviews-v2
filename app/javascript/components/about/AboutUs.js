@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="container">
-      <div className="flex-column callout  mt-6">
-        <h1 className="is-size-1">About Us</h1>
+    <div className="container mt-6">
+      <div className="flex-column callout">
+        <h1 className="title-large has-text-centered">About Us</h1>
         <p className="is-size-7">
           We&apos;re just two nerds constantly looking for ways to escape the
           city and do not have the ability to not turn everything into a

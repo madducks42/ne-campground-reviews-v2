@@ -50,7 +50,7 @@ const CampgroundFilter = (props) => {
   
     return (
       <div className='flex-column mt-4'>
-        <h5 className="is-size-5">Display Campgrounds In:</h5>
+        <h5 className="is-size-5 font-black">Display Campgrounds In:</h5>
         <div className='flex-column'>  
           <label className='checkbox-label'>
             MA:
@@ -98,7 +98,7 @@ const CampgroundFilter = (props) => {
               onChange={handleInputChange} />
           </label>
         </div>
-        <h5 className="is-size-5 mt-4">Display Campgrounds With:</h5>
+        <h5 className="is-size-5 mt-4 font-black">Display Campgrounds With:</h5>
         <div className='flex-column'>  
           <label className='checkbox-label'>
             Dogs Allowed:

@@ -1,37 +1,43 @@
 // General Font Style
 
 p, a, li {
-  font-family: 'Bitter', serif;
+  font-family: 'Merriweather', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Merienda One', serif;
 }
 
 .font-family {
-  font-family: 'Bitter', serif;
+  font-family: 'Merriweather', serif;
   font-size: 1.2em;
 }
 
+.font-black {
+  color: #101419;
+}
+
 .nav-links {
-  font-family: 'Cinzel', serif;
-  font-size: 1.4em;
-  color: #0c0c53;
+  font-family: 'Merienda One', serif;
+  font-size: 1.6em;
+  color: #101419;
 }
 
 .title-small {
-  font-family: 'Cinzel', serif;
+  font-family: 'Merienda One', serif;
   font-size: 1.6em;
 }
 
 .title-medium {
-  font-family: 'Cinzel', serif;
+  font-family: 'Merienda One', serif;
   font-size: 2em;
+  color: #101419;
 }
 
 .title-large {
-  font-family: 'Cinzel', serif;
+  font-family: 'Merriweather', serif;
   font-size: 2.4em;
+  color: #101419;
 }
 
 html p {
@@ -48,7 +54,7 @@ li {
 }
 
 .color-black {
-  color: #101419;
+  color: #4A4A4A;
 }
 
 .color-red {

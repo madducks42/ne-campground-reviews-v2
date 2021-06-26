@@ -2,8 +2,8 @@ import React from "react";
 
 const CamperInfo = () => {
   return (
-    <div className="flex-column">
-      <h1 className="is-size-1 font-red has-text-centered has-text-weight-semibold">
+    <div className="flex-column mt-6">
+      <h1 className="title-large mt-6 has-text-centered">
         Our Camper
       </h1>
       <a

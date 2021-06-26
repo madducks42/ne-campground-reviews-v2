@@ -6,7 +6,7 @@ import CamperMisc from "./CamperMisc"
 
 const CamperContainer = () => {
   return (
-    <div className="container camper-mods-style">
+    <div className="container camper-mods-style mt-6">
       <CamperInfo />
       <ModsContainer />
       <CamperMisc />

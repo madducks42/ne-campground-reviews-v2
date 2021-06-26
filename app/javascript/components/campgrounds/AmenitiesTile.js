@@ -53,7 +53,7 @@ const AmenitiesTile = (props) => {
 
   return (
     <div>
-      <h3 className="is-size-4">General Info:</h3>
+      <h3 className="title-medium mb-3">GENERAL INFO</h3>
       <ul>
         <li>
           <a href={props.campgroundLink} target="_blank" rel="noreferrer">

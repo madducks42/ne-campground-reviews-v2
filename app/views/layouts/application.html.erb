@@ -8,11 +8,8 @@
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400;1,600;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,800;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Merriweather:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e961c52d73.js" crossorigin="anonymous"></script>
   </head>
 
@@ -32,16 +29,16 @@
       <div class="navbar-menu" id="navMenu">
         <div class="navbar-end">
           <a class="navbar-item nav-links" href= "/">
-            Home
+            HOME
           </a>
           <a class="navbar-item nav-links" href= "/about">
-            About Us
+            ABOUT US
           </a>
           <a class="navbar-item nav-links" href= "/camper">
-            Our Camper
+            OUR CAMPER
           </a>
           <a class="navbar-item nav-links" href= "/contact">
-            Contact
+            CONTACT
           </a>
 
         </div>
@@ -63,7 +60,7 @@
         | 
         <%= link_to ' Admin Logout', destroy_user_session_path, method: :delete, class: 'footer-item' %>
       <%- else -%>
-        <%= link_to 'Sign In', new_user_session_path %>
+        <%= link_to 'Sign In', new_user_session_path, class: 'footer-item' %>
       <%- end -%>
     </footer>
 
