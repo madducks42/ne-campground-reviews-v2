@@ -19,12 +19,12 @@ const tileImage = getTileImage(props.name)
           <div className="media">
             <div className="media-content">
               <p className="card-title has-text-centered">
-                <Link className="font-red" to={`/campgrounds/${props.id}`}>{props.name}</Link>
+                <Link to={`/campgrounds/${props.id}`}>{props.name}</Link>
               </p>
               <p className="subtitle is-6 has-text-centered">{props.location}</p>
             </div>
           </div>
-          <div className="content">
+          <div className="content has-text-centered">
             <p>{props.caption}</p>
             < br />
           </div>

@@ -31,7 +31,7 @@ const CampgroundContainer = (props) => {
   return (
     <div className="container">
       <div className="mb-6">
-        <h1 className="has-text-centered is-size-1 has-text-weight-semibold font-red mb-6 mt-6">
+        <h1 className="has-text-centered title-large mb-6 mt-6">
           {campground.name}
         </h1>
         { sliderData?.length > 0 && <ImageSlider slides={sliderData} /> }
@@ -46,7 +46,7 @@ const CampgroundContainer = (props) => {
             />
           </div>
         </div>
-        <div className="columns info-container">
+        <div className="columns is-vcentered color-bg-blue p-lg">
           <div className="column">
             <div className="amenities-container">
               <div>

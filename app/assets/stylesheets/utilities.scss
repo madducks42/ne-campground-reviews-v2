@@ -47,6 +47,10 @@
 }
 
 // Button Styles
+.button {
+  font-family: 'Merriweather', serif;
+}
+
 .button:hover {
   background-color: #720909;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;

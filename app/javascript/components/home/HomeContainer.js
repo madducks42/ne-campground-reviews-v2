@@ -80,7 +80,7 @@ const HomeContainer = () => {
       <section className="hero is-link is-fullheight-with-navbar border-bottom">
         <div className="hero-body landing-image">
           <div className="container has-text-centered opacity-callout">
-            <p className="color-black">
+            <p className="title-medium">
               Welcome to Northeast Campground Reviews!
             </p>
             <p className="color-black">
