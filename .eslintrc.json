@@ -15,7 +15,6 @@
     "jsx-a11y/rule-name": 0,
     "jsx-a11y/anchor-has-content": "warn"
   },
-  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
