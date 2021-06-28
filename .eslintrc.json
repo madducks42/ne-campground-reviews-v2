@@ -6,7 +6,7 @@
     "plugin:jsx-a11y/recommended",
     "prettier"
   ],
-  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks", "@babel"],
   "rules": {
     "react/prop-types": 0,
     "react-hooks/rules-of-hooks": "error",
@@ -15,9 +15,11 @@
     "jsx-a11y/rule-name": 0,
     "jsx-a11y/anchor-has-content": "warn"
   },
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
+    "requireConfigFile": false,
     "ecmaFeatures": { "jsx": true }
   },
   "env": {
