@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import CamperInfo from "./CamperInfo";
 import ModsContainer from "./ModsContainer";
-import CamperMisc from "./CamperMisc"
+import CamperMisc from "./CamperMisc";
 
 const CamperContainer = () => {
-
   const [mods, setMods] = useState([]);
   const [userIsAdmin, setUserIsAdmin] = useState({});
 
@@ -35,7 +34,7 @@ const CamperContainer = () => {
   return (
     <div className="container camper-mods-style mt-6">
       <CamperInfo />
-      <ModsContainer />
+      <ModsContainer mods={mods} userIsAdmin={userIsAdmin} />
       <CamperMisc />
     </div>
   );
