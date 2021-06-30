@@ -12,6 +12,16 @@ user_1 =
     role: 'admin'
   )
 
+mod_1 = Mod.create(
+  title: "Battery Monitor",
+  body: "TEST DATA BLAH BLAH BLAH"
+)
+
+mod_2 = Mod.create(
+  title: "Mattress",
+  body: "TEST DATA BLAH BLAH BLAH"
+)
+
 # New Hampshire
 campground_1 =
   Campground.create!(
