@@ -21,7 +21,9 @@ Rails.application.routes.draw do
       post 'campgrounds/search', to: 'campgrounds#search'
       post 'campgrounds/filter', to: 'campgrounds#filter'
 
-      resources :campgrounds, only: [:index, :show, :create, :edit, :update, :destroy] 
+      resources :campgrounds, only: [:index, :show, :create, :edit, :update, :destroy]
+
+      resources :mods, only: [:index, :show, :create, :edit, :update, :destroy]
     end
   end
 
