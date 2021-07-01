@@ -21,7 +21,7 @@ const ModsContainer = (props) => {
       return (
         <div className="camper-mods-section" key={mod.id}>
           <div className="flex-row">
-            <h4 className="is-size-4">{mod.title}</h4>
+            <h4 className="mods-title">{mod.title}</h4>
             <i
               type="input"
               id={mod.id}
@@ -55,7 +55,7 @@ const ModsContainer = (props) => {
       return (
         <div className="camper-mods-section" key={mod.id}>
           <div className="flex-row">
-            <h4 className="is-size-4">{mod.title}</h4>
+            <h4 className="mods-title">{mod.title}</h4>
             <i
               type="input"
               id={mod.id}

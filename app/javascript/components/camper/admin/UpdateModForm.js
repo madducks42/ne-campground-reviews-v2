@@ -74,10 +74,7 @@ const UpdateModForm = (props) => {
     let submitErrors = {};
     const requiredFields = ["title", "body"];
     requiredFields.forEach((field) => {
-      if (
-        updatedMod[field].trim() === "" ||
-        updatedMod[field].trim() === ""
-      ) {
+      if (updatedMod[field].trim() === "" || updatedMod[field].trim() === "") {
         submitErrors = {
           ...submitErrors,
           [field]: "is blank",
@@ -108,7 +105,6 @@ const UpdateModForm = (props) => {
       <div className="columns">
         <div className="column">
           <form onSubmit={handleSubmit} className="new-campground-form callout">
-            {/* <h3>Update Campground</h3> */}
             <ErrorList errors={errors} />
             <div className="field">
               <label className="label">
@@ -152,6 +148,30 @@ const UpdateModForm = (props) => {
               </div> */}
             </div>
           </form>
+          <div className="flex-column mb-6">
+            <h5 className="is-size-5">Tag References:</h5>
+            <pre>
+              <code>
+                &lt;p class=&quot;mods-text&quot;&gt;Each paragraph should be wrapped in this
+                tag.&lt;/p&gt;
+              </code>
+              <br />
+              <br />
+              <code>
+                &lt;ol class=&quot;mods-list&quot;&gt;
+                <br />
+                  &lt;li&gt;
+                    Add list item here
+                    &lt;/li&gt;
+                < br />
+                  &lt;li&gt;
+                    Add list item here
+                    &lt;/li&gt;
+                <br />
+                &lt;/ol&gt;
+              </code>
+            </pre>
+          </div>
         </div>
       </div>
     </div>
