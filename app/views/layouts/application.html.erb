@@ -60,7 +60,7 @@
         | 
         <%= link_to ' Admin Logout', destroy_user_session_path, method: :delete, class: 'footer-item' %>
       <%- else -%>
-        <%= link_to 'Sign In', new_user_session_path, class: 'footer-item' %>
+        <%= link_to 'Admin Login', new_user_session_path, class: 'footer-item' %>
       <%- end -%>
     </footer>
 
