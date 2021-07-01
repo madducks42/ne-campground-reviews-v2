@@ -1,41 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import _ from "lodash";
 
 import ErrorList from "../../utilities/ErrorList";
 
-const UpdateModForm = (props) => {
+export const NewPostForm = () => {
   let defaultFields = {
     title: "",
     body: "",
   };
 
-  const [updatedMod, setUpdatedMod] = useState(defaultFields);
+  const [newMod, setNewMod] = useState(defaultFields);
   const [errors, setErrors] = useState({});
   const [shouldRedirect, setShouldRedirect] = useState(false);
 
-  useEffect(() => {
-    let id = props.match.params.id;
-    fetch(`/api/v1/mods/${id}`)
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          let errorMessage = `${response.status} (${response.statusText})`,
-            error = new Error(errorMessage);
-          throw error;
-        }
-      })
-      .then((body) => {
-        setUpdatedMod(body);
-      })
-      .catch((error) => console.error(`Error in fetch: ${error.message}`));
-  }, []);
+  if (shouldRedirect) {
+    return <Redirect to="/camper" />;
+  }
 
-  const updateMod = (formData) => {
-    let id = props.match.params.id;
-    fetch(`/api/v1/mods/${id}`, {
-      method: "PATCH",
+  const addNewMod = (formData) => {
+    fetch("/api/v1/mods", {
+      method: "POST",
       body: JSON.stringify(formData),
       credentials: "same-origin",
       headers: {
@@ -57,15 +42,15 @@ const UpdateModForm = (props) => {
         if (body.errors) {
           setErrors(body.errors);
         } else {
-          setShouldRedirect(body.id);
+          setShouldRedirect(true);
         }
       })
       .catch((error) => console.error(`Error in fetch: ${error.message}`));
   };
 
   const handleChange = (event) => {
-    setUpdatedMod({
-      ...updatedMod,
+    setNewMod({
+      ...newMod,
       [event.currentTarget.name]: event.currentTarget.value,
     });
   };
@@ -74,7 +59,10 @@ const UpdateModForm = (props) => {
     let submitErrors = {};
     const requiredFields = ["title", "body"];
     requiredFields.forEach((field) => {
-      if (updatedMod[field].trim() === "" || updatedMod[field].trim() === "") {
+      if (
+        newMod[field].trim() === "" ||
+        newMod[field].trim() === ""
+      ) {
         submitErrors = {
           ...submitErrors,
           [field]: "is blank",
@@ -89,23 +77,21 @@ const UpdateModForm = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (validForSubmission()) {
-      updateMod(updatedMod);
+      addNewMod(newMod);
+      setNewMod(defaultFields);
     }
   };
 
-  if (shouldRedirect) {
-    return <Redirect to={`/camper`} />;
-  }
-
   return (
     <div className="container">
-      <h3 className="has-text-centered is-size-3 font-red mt-6 has-text-weight-semibold">
-        Update Camper Mod
+      <h3 className="has-text-centered is-size-3 font-blue mt-6 has-text-weight-semibold">
+        Add New Post
       </h3>
       <div className="columns">
         <div className="column">
-          <form onSubmit={handleSubmit} className="new-campground-form callout">
+          <form onSubmit={handleSubmit} className="new-post-form callout">
             <ErrorList errors={errors} />
+
             <div className="field">
               <label className="label">
                 Title:
@@ -115,8 +101,8 @@ const UpdateModForm = (props) => {
                     id="title"
                     type="text"
                     onChange={handleChange}
-                    value={updatedMod.title}
-                    className="campground-form"
+                    value={newMod.title}
+                    className="input"
                   />
                 </div>
               </label>
@@ -131,7 +117,7 @@ const UpdateModForm = (props) => {
                     id="body"
                     type="textarea"
                     onChange={handleChange}
-                    value={updatedMod.body}
+                    value={newMod.body}
                     className="textarea is-medium"
                     rows="15"
                   />
@@ -145,12 +131,9 @@ const UpdateModForm = (props) => {
                   Submit
                 </button>
               </div>
-              {/* <div className="control">
-                <button className="button" type="submit" value="Cancel">Cancel</button>
-              </div> */}
             </div>
           </form>
-          <div className="flex-column mb-6">
+          <div className="flex-column mt-6 mb-6">
             <h5 className="is-size-5">Tag References:</h5>
             <pre>
               <code>
@@ -180,4 +163,4 @@ const UpdateModForm = (props) => {
   );
 };
 
-export default UpdateModForm;
+export default NewPostForm;

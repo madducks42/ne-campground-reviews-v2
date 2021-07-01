@@ -79,6 +79,16 @@ const ModsContainer = (props) => {
         As much as we love the Wolf Pup (aka the &apos;Gray Ghost&apos;), there
         are some things that we tweaked...
       </p>
+      {props.userIsAdmin === true && (
+          <div className="columns devise-flex mt-6">
+            <Link
+              className="button devise-buttons"
+              to="/mods/new"
+            >
+              New Camper Mod
+            </Link>
+          </div>
+        )}
       <div className="camper-mods-container"> {modSections}</div>
     </div>
   );
