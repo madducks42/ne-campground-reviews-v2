@@ -12,6 +12,15 @@ user_1 =
     role: 'admin'
   )
 
+user_2 =
+  User.create(
+    first_name: 'Caesar',
+    last_name: 'Naples',
+    email: 'caesar.naples+admin@gmail.com',
+    password: 'password',
+    role: 'admin'
+  )
+
 mod_1 = Mod.create(
   title: "Battery Monitor",
   body: "TEST DATA BLAH BLAH BLAH"
