@@ -32,7 +32,7 @@ const ModsContainer = (props) => {
               className="fas fa-minus-square mods-button"
             ></i>
           </div>
-          <div>{mod.body}</div>
+          <div dangerouslySetInnerHTML={{ __html: mod.body }}></div>
           {props.userIsAdmin === true && (
             <div className="columns devise-flex">
               <Link

@@ -13,7 +13,11 @@ Rails.application.routes.draw do
   get '/campgrounds/:id', to: 'homepages#index'
 
   get '/about', to: "homepages#index"
+
   get '/camper', to: "homepages#index"
+  get '/mods/new', to: 'homepages#authenticated'
+  get '/mods/:id/destroy', to: 'homepages#authenticated'
+  get '/mods/:id/update', to: 'homepages#authenticated'
 
 
   namespace :api do
