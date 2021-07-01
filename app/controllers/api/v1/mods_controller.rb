@@ -7,9 +7,9 @@ class Api::V1::ModsController < ApiController
   end
   
   # SHOW /mods/1
-  def show
-    render json: Mod.find(params[:id]), serializer: ModsShowSerializer
-  end
+  # def show
+  #   render json: Mod.find(params[:id]), serializer: ModsShowSerializer
+  # end
 
   # CREATE /mods/new
   def create

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ModsContainer = (props) => {
   const [visibility, setVisibility] = useState({
@@ -18,7 +19,7 @@ const ModsContainer = (props) => {
   const modSections = props.mods.map((mod) => {
     if (visibility[mod.id]) {
       return (
-        <div className="camper-mods-section" key={mod.key}>
+        <div className="camper-mods-section" key={mod.id}>
           <div className="flex-row">
             <h4 className="is-size-4">{mod.title}</h4>
             <i
@@ -32,11 +33,27 @@ const ModsContainer = (props) => {
             ></i>
           </div>
           <div>{mod.body}</div>
+          {props.userIsAdmin === true && (
+            <div className="columns devise-flex">
+              <Link
+                className="button devise-buttons"
+                to={`/mods/${mod.id}/update`}
+              >
+                Update Mod
+              </Link>
+              <Link
+                className="button devise-buttons"
+                to={`/mods/${mod.id}/destroy`}
+              >
+                Delete Mod
+              </Link>
+            </div>
+          )}
         </div>
       );
     } else {
       return (
-        <div className="camper-mods-section" key={mod.key}>
+        <div className="camper-mods-section" key={mod.id}>
           <div className="flex-row">
             <h4 className="is-size-4">{mod.title}</h4>
             <i
