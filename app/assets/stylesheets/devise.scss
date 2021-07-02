@@ -1,14 +1,15 @@
-// Devise Style 
+// Devise Style
 div.devise-bg.callout {
-  background-color: #476C9B;
+  background-color: #476c9b;
   padding: 40px;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-label.label.devise-style, .devise-style {
-  font-family: 'Merriweather', serif;
-  color: #101419;
+label.label.devise-style,
+.devise-style {
+  font-family: "Merriweather", serif;
+  color: #4a4a4a;
   font-size: 1.4rem;
   font-weight: normal;
 }
@@ -20,7 +21,7 @@ input#user_remember_me.devise-check {
 
 label.devise-check {
   margin-left: 5px;
-  color: #101419;
+  color: #4a4a4a;
 }
 
 // devise links

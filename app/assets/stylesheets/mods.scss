@@ -8,9 +8,9 @@
 // }
 
 .camper-mods-style em {
-  color: #101419;
+  color: #4a4a4a;
   font-family: "Source Serif Pro", serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .camper-mods-container {
@@ -34,12 +34,11 @@
 }
 
 .fa-minus-square {
-  color: #dc602e;
-  margin-bottom: 10px;
+  color: #B39B6C;
 }
 
 .mods-title {
-  font-family: 'Merriweather', serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 2em;
 }
 
@@ -51,7 +50,7 @@
   margin: 2em 10em 2em 5em;
 }
 
-.mods-list ul {
+ul.mods-list.content {
   list-style-type: disc;
 }
 

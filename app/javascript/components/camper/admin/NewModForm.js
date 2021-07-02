@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import _ from "lodash";
 
+import CodeSample from "../../utilities/CodeSample"
 import ErrorList from "../../utilities/ErrorList";
 
 export const NewPostForm = () => {
@@ -83,7 +84,7 @@ export const NewPostForm = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container mt-6">
       <h3 className="has-text-centered is-size-3 font-blue mt-6 has-text-weight-semibold">
         Add New Post
       </h3>
@@ -133,30 +134,7 @@ export const NewPostForm = () => {
               </div>
             </div>
           </form>
-          <div className="flex-column mt-6 mb-6">
-            <h5 className="is-size-5">Tag References:</h5>
-            <pre>
-              <code>
-                &lt;p class=&quot;mods-text&quot;&gt;Each paragraph should be wrapped in this
-                tag.&lt;/p&gt;
-              </code>
-              <br />
-              <br />
-              <code>
-                &lt;ol class=&quot;mods-list&quot;&gt;
-                <br />
-                  &lt;li&gt;
-                    Add list item here
-                    &lt;/li&gt;
-                < br />
-                  &lt;li&gt;
-                    Add list item here
-                    &lt;/li&gt;
-                <br />
-                &lt;/ol&gt;
-              </code>
-            </pre>
-          </div>
+          <CodeSample />
         </div>
       </div>
     </div>

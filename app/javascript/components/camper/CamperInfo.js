@@ -3,7 +3,7 @@ import React from "react";
 const CamperInfo = () => {
   return (
     <div className="flex-column mt-6">
-      <h1 className="title-large mt-6 has-text-centered">
+      <h1 className="page-title mt-6 has-text-centered">
         Our Camper
       </h1>
       <a
@@ -61,13 +61,14 @@ const CamperInfo = () => {
         want to bring friends on our trips. So, we needed beds for 4...
       </p>
       <p className="is-size-7 mb-4">
-        This all added up to the
+        This all added up to the{" "}
         <a
           href="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/2019wolfpupbrochure.pdf"
           target="_blank"
           rel="noreferrer"
+          className="links"
         >
-          2019 Forest River Wolf Pup 16BHs - Black Label Edition
+           2019 Forest River Wolf Pup 16BHs - Black Label Edition
         </a>
         , seen up top.
       </p>

@@ -1,26 +1,25 @@
 // General Font Style
 
 p, a, li {
-  font-family: 'Merriweather', serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merienda One', serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .font-family {
-  font-family: 'Merriweather', serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.2em;
 }
 
-.font-black {
-  color: #101419;
+.links {
+  text-decoration: underline;
 }
 
 .nav-links {
   font-family: 'Merienda One', serif;
   font-size: 1.6em;
-  color: #101419;
 }
 
 .title-small {
@@ -31,13 +30,20 @@ h1, h2, h3, h4, h5, h6 {
 .title-medium {
   font-family: 'Merienda One', serif;
   font-size: 2em;
-  color: #101419;
+  color: #4a4a4a;
 }
 
 .title-large {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merienda One', serif;
   font-size: 2.4em;
-  color: #101419;
+  color: #4a4a4a;
+}
+
+.page-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  color: #4a4a4a;
 }
 
 html p {
@@ -55,12 +61,4 @@ li {
 
 .color-black {
   color: #4A4A4A;
-}
-
-.color-red {
-  color: #720909;
-}
-
-.color-blue {
-  color: #0c0c53;
 }
