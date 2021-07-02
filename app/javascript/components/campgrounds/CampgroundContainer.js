@@ -20,54 +20,56 @@ const CampgroundContainer = (props) => {
       setUserIsAdmin(body.userIsAdmin);
     });
   }, []);
-  
-  let sliderData = []
-  let i = 1
+
+  let sliderData = [];
+  let i = 1;
   while (i <= campground.image_num) {
-    sliderData.push({ image: `https://ne-campground-reviews.s3.amazonaws.com/${campground.image_name}/${campground.image_name}-${i}.jpg` })
+    sliderData.push({
+      image: `https://ne-campground-reviews.s3.amazonaws.com/${campground.image_name}/${campground.image_name}-${i}.jpg`,
+    });
     i++;
   }
 
   return (
     <div className="container">
-      <div className="mb-6">
-        <h1 className="has-text-centered title-large mb-6 mt-6">
-          {campground.name}
-        </h1>
-        { sliderData?.length > 0 && <ImageSlider slides={sliderData} /> }
-        <div className="columns">
-          <div className="column">
-            <ReviewTile
-              key={campground.id}
-              campgroundLink={campground.campground_link}
-              name={campground.name}
-              review={campground.review}
-              location={campground.location}
-            />
-          </div>
+      <h1 className="has-text-centered page-title mb-6 mt-6">
+        {campground.name}
+      </h1>
+      {sliderData?.length > 0 && <ImageSlider slides={sliderData} />}
+      <div className="columns">
+        <div className="column">
+          <ReviewTile
+            key={campground.id}
+            campgroundLink={campground.campground_link}
+            name={campground.name}
+            review={campground.review}
+            location={campground.location}
+          />
         </div>
-        <div className="columns is-vcentered color-bg-blue p-lg">
-          <div className="column">
-            <div className="amenities-container">
-              <div>
-                <AmenitiesTile
-                  key={campground.id}
-                  campgroundLink={campground.campground_link}
-                  dogsAllowed={campground.dogs_allowed}
-                  electricHookups={campground.electronic_hookups}
-                  waterHookups={campground.water_hookups}
-                  potableWater={campground.potable_water}
-                  dumpStation={campground.dump_station}
-                  bathrooms={campground.bathrooms}
-                  showers={campground.showers}
-                />
-              </div>
+      </div>
+      <div className="columns is-vcentered color-bg-blue p-lg">
+        <div className="column">
+          <div className="amenities-container">
+            <div>
+              <AmenitiesTile
+                key={campground.id}
+                campgroundLink={campground.campground_link}
+                dogsAllowed={campground.dogs_allowed}
+                electricHookups={campground.electronic_hookups}
+                waterHookups={campground.water_hookups}
+                potableWater={campground.potable_water}
+                dumpStation={campground.dump_station}
+                bathrooms={campground.bathrooms}
+                showers={campground.showers}
+              />
             </div>
           </div>
-          <div className=" column map-container">
-            <MapTile />
-          </div>
         </div>
+        <div className=" column map-container">
+          <MapTile />
+        </div>
+      </div>
+      <section className="section">
         {userIsAdmin === true && (
           <div className="columns devise-flex">
             <Link
@@ -84,7 +86,7 @@ const CampgroundContainer = (props) => {
             </Link>
           </div>
         )}
-      </div>
+      </section>
     </div>
   );
 };
