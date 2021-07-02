@@ -52,24 +52,31 @@ const AmenitiesTile = (props) => {
   }
 
   return (
-    <div>
-      <h3 className="title-medium mb-3">GENERAL INFO</h3>
-      <ul>
-        <li>
-          <a href={props.campgroundLink} target="_blank" rel="noreferrer" className="links">
-            Official Website
-          </a>
-        </li>
-        <li>Dogs Allowed - {dogsAllowedStatus}</li>
-        <li>Electric Hookups - {electricHookupsStatus}</li>
-        <li>Water Hookups - {waterHookupsStatus}</li>
-        <li>Potable Water - {potableWaterStatus}</li>
-        <li>Dump Station - {dumpStationStatus}</li>
-        <li>Bathrooms - {bathroomsStatus}</li>
-        <li>Showers - {showersStatus}</li>
-      </ul>
-      <br />
-    </div>
+    <section className="section">
+      <div>
+        <h3 className="title-medium mb-3">GENERAL INFO</h3>
+        <ul>
+          <li>
+            <a
+              href={props.campgroundLink}
+              target="_blank"
+              rel="noreferrer"
+              className="links"
+            >
+              Official Website
+            </a>
+          </li>
+          <li>Dogs Allowed - {dogsAllowedStatus}</li>
+          <li>Electric Hookups - {electricHookupsStatus}</li>
+          <li>Water Hookups - {waterHookupsStatus}</li>
+          <li>Potable Water - {potableWaterStatus}</li>
+          <li>Dump Station - {dumpStationStatus}</li>
+          <li>Bathrooms - {bathroomsStatus}</li>
+          <li>Showers - {showersStatus}</li>
+        </ul>
+        <br />
+      </div>
+    </section>
   );
 };
 
