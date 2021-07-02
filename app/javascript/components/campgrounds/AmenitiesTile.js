@@ -56,7 +56,7 @@ const AmenitiesTile = (props) => {
       <h3 className="title-medium mb-3">GENERAL INFO</h3>
       <ul>
         <li>
-          <a href={props.campgroundLink} target="_blank" rel="noreferrer">
+          <a href={props.campgroundLink} target="_blank" rel="noreferrer" className="links">
             Official Website
           </a>
         </li>

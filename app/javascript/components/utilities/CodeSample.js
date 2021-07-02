@@ -33,6 +33,14 @@ const CodeSample = () => {
         </code>
         <br />
         <br />
+        <code>
+          &lt;a href=&quot;www.link.com&quot;
+          target=&quot;_blank&quot; rel=&quot;noreferrer&quot;
+          class=&quot;links&quot; &gt; Use this to add links &lt;/a&gt;
+        </code>
+        <br />
+        <br />
+        
       </pre>
     </div>
   );
