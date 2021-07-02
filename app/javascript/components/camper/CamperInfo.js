@@ -3,17 +3,17 @@ import React from "react";
 const CamperInfo = () => {
   return (
     <div className="flex-column mt-6">
-      <h1 className="title-large mt-6 has-text-centered">
+      <h1 className="page-title mt-6 has-text-centered">
         Our Camper
       </h1>
       <a
-        href="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/CliffordAndTheGrayGhost-2019-06-11.jpg"
+        href="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/CliffordAndTheGrayGhost-2019-06-11.jpg"
         data-lightbox="our-camper"
         data-title="Subaru Ascent w/ 2019 Wolf Pup"
       >
         <img
           className="galleryimage"
-          src="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/CliffordAndTheGrayGhost-2019-06-11.jpg"
+          src="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/CliffordAndTheGrayGhost-2019-06-11.jpg"
           alt="Clifford and The Gray Ghost"
         />
       </a>
@@ -38,13 +38,13 @@ const CamperInfo = () => {
         another plus...
       </p>
       <a
-        href="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/AlinerOutside.jpg"
+        href="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/AlinerOutside.jpg"
         data-lightbox="a-liner"
         data-title="Aliner Sport Trailer"
       >
         <img
           className="galleryimage"
-          src="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/AlinerOutside.jpg"
+          src="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/AlinerOutside.jpg"
           alt="Aliner Sport Trailer"
         />
       </a>
@@ -61,13 +61,14 @@ const CamperInfo = () => {
         want to bring friends on our trips. So, we needed beds for 4...
       </p>
       <p className="is-size-7 mb-4">
-        This all added up to the
+        This all added up to the{" "}
         <a
-          href="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/2019wolfpupbrochure.pdf"
+          href="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/2019wolfpupbrochure.pdf"
           target="_blank"
           rel="noreferrer"
+          className="links"
         >
-          2019 Forest River Wolf Pup 16BHs - Black Label Edition
+           2019 Forest River Wolf Pup 16BHs - Black Label Edition
         </a>
         , seen up top.
       </p>
@@ -90,14 +91,14 @@ const CamperInfo = () => {
         </ul>
       </div>
       <a
-        href="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/FRWP16BHS.jpg"
+        href="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/FRWP16BHS.jpg"
         alt="2019 Wolf Pup Brochure"
         data-lightbox="wolf-pup-brochure"
         data-title="2019 Wolf Pup Brochure"
       >
         <img
           className="galleryimage"
-          src="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/FRWP16BHS.jpg"
+          src="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/FRWP16BHS.jpg"
           alt="2019 Wolf Pup Brochure"
         />
       </a>
@@ -121,26 +122,26 @@ const CamperInfo = () => {
       </p>
       <div className="lightbox-container-mods">
         <a
-          href="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/2019wolfpupNotBLE.jpg"
+          href="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/2019wolfpupNotBLE.jpg"
           data-lightbox="model-compare"
           data-title="Campground Images"
           className="camper-mods-thumbnail"
         >
           <img
             className="galleryimage"
-            src="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/2019wolfpupNotBLE.jpg"
+            src="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/2019wolfpupNotBLE.jpg"
             alt="Campground"
           />
         </a>
         <a
-          href="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/premiummodel.jpg"
+          href="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/premiummodel.jpg"
           data-lightbox="model-compare"
           data-title="Campground Images"
           className="camper-mods-thumbnail"
         >
           <img
             className="galleryimage"
-            src="https://campground-reviews-prod.s3.amazonaws.com/CamperMods/premiummodel.jpg"
+            src="https://ne-campground-reviews.s3.amazonaws.com/CamperMods/premiummodel.jpg"
             alt="Campground"
           />
         </a>

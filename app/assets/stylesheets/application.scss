@@ -16,13 +16,13 @@
  */
 
  // Header Overrides
- $navbar-background-color: #ffffff;
+ $navbar-background-color: #98c1d9;
  $navbar-height: 8rem;
  $navbar-item-img-max-height: 8rem;
- $navbar-item-color: #101419;
- $navbar-item-hover-color: #720909;
- $navbar-item-hover-background-color: #ffffff;
- $navbar-dropdown-background-color: #ffffff;
+ $navbar-item-color: #4a4a4a;
+ $navbar-item-hover-color: #B39B6C;
+ $navbar-item-hover-background-color: #98c1d9;
+ $navbar-dropdown-background-color: #98c1d9;
  
  // Footer Overrides
  $footer-background-color: #fdfdfd;
@@ -30,7 +30,7 @@
  $footer-padding: 2rem;
  
  // Font Overrides
- $is-family-primary:'Merriweather';
+ $is-family-primary:'Ubuntu', sans-serif;
  $is-family-secondary: serif;
  $size-1: 3rem;
  $size-2: 2.5rem;
@@ -43,8 +43,8 @@
  // Button Overrides
  $button-text-color:#ffffff;
  $button-color:#ffffff;
- $button-background-color: #0c0c53;
- $button-border-color: #0c0c53;
+ $button-background-color: #476c9b;
+ $button-border-color: #476c9b;
  
  // Button Active/Focus Overrides
  // $button-focus-color: #ffffff;
@@ -52,12 +52,12 @@
  // $button-focus-box-shadow-size: 0 0 0 0em;
  
  // Button Hover Overrides
- $button-hover-border-color: #720909;
+ $button-hover-border-color: #984447;
  $button-hover-color: #ffffff;
  $button-text-hover-color:#ffffff;
  
  // Link Overrides
- $link: #0c0c53;
- $link-hover:  #720909;
+ $link: #476c9b;
+ $link-hover:  #984447;
  
  @import "bulma";

@@ -38,6 +38,7 @@ const AboutUs = () => {
           href="https://www.instagram.com/perpetuallylostphotography/"
           target="_blank"
           rel="noreferrer"
+          className="links"
         >
           <img src="/images/icons/instagram.png" alt="Instagram icon" />
         </a>
@@ -45,6 +46,7 @@ const AboutUs = () => {
           href="http://www.facebook.com/perpetuallylostphotography/"
           target="_blank"
           rel="noreferrer"
+          className="links"
         >
           <img src="/images/icons/facebook.png" alt="Facebook icon" />
         </a>

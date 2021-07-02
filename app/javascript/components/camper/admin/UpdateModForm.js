@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 import _ from "lodash";
 
 import ErrorList from "../../utilities/ErrorList";
+import CodeSample from "../../utilities/CodeSample"
 
 const UpdateModForm = (props) => {
   let defaultFields = {
@@ -150,30 +151,7 @@ const UpdateModForm = (props) => {
               </div> */}
             </div>
           </form>
-          <div className="flex-column mb-6">
-            <h5 className="is-size-5">Tag References:</h5>
-            <pre>
-              <code>
-                &lt;p class=&quot;mods-text&quot;&gt;Each paragraph should be wrapped in this
-                tag.&lt;/p&gt;
-              </code>
-              <br />
-              <br />
-              <code>
-                &lt;ol class=&quot;mods-list&quot;&gt;
-                <br />
-                  &lt;li&gt;
-                    Add list item here
-                    &lt;/li&gt;
-                < br />
-                  &lt;li&gt;
-                    Add list item here
-                    &lt;/li&gt;
-                <br />
-                &lt;/ol&gt;
-              </code>
-            </pre>
-          </div>
+          <CodeSample />
         </div>
       </div>
     </div>

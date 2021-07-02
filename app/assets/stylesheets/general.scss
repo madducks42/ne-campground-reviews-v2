@@ -4,7 +4,7 @@
 }
 
 .color-bg-black {
-  background-color: #101419;
+  background-color: #4a4a4a;
 }
 
 .color-bg-red {
@@ -13,14 +13,6 @@
 
 .color-bg-blue {
   background-color: #476c9b;
-}
-
-.color-bg-dk-blue {
-  background-color: #0c0c53;
-}
-
-.color-bg-green {
-  background-color: #98b9ab;
 }
 
 // General Page Setup
@@ -34,9 +26,9 @@ html {
 
 body {
   background-color: white;
-  font-family: 'Merriweather', serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.4rem;
-  color: #101419;
+  color: #4a4a4a;
   height: 100%;
   width: 100%;
   min-height: 100vh;
