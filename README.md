@@ -1,24 +1,51 @@
-# README
+# NE CAMPGROUND REVIEWS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+NE Campground Reviews is a review application that provides information and reviews for campground around the Northeast. Devise was used to handle user authentication and authorization. Currently the only role used is "admin" which gives authorized users the ability to create new campgrounds, update existing campgrounds, and add/edit camper modifications.
 
-Things you may want to cover:
+This application also uses ActiveRecord. Images are stored in AWS S3 Cloud Storage.
 
-* Ruby version
+[See the deployed application here](https://necampgroundreviews.com/)
 
-* System dependencies
 
-* Configuration
+## Built with
+- [Ruby on Rails](https://guides.rubyonrails.org/v5.2/)
+- [React.js](https://reactjs.org/docs/getting-started.html)
+- [PostgreSQL](https://www.postgresql.org/docs/13/index.html)
 
-* Database creation
+## Run Locally
+The setup steps expect the following tools/versions:
+- Ruby 2.7.2
+- Rails 6.1.0
+- PostgreSQL 13.1
 
-* Database initialization
+###### Clone the Repo
+```
+git clone 
+```
+###### Install Dependencies
+```
+yarn install 
+```
+```
+bundle install 
+```
 
-* How to run the test suite
+###### Create and seed the database
+```
+bundle exec rake db: migrate
+```
+```
+bundle exec rake db: seed
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+###### Run the test suite
+```
+bundle exec rspec
+```
+###### Start the Rails server and webpack-dev-server
+```
+bundle exec rails s
+yarn run start
+```
 
-* Deployment instructions
-
-* ...
+###### The application can be accessed locally at <http://localhost:3000>
