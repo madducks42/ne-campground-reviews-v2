@@ -62,8 +62,6 @@
         <%= link_to 'Admin Profile ', edit_user_registration_path, class: 'footer-item' %>
         | 
         <%= link_to ' Admin Logout', destroy_user_session_path, method: :delete, class: 'footer-item' %>
-      <%- else -%>
-        <%= link_to 'Admin Login', new_user_session_path, class: 'footer-item' %>
       <%- end -%>
     </footer>
 
