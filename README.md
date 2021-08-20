@@ -1,11 +1,12 @@
 # NE CAMPGROUND REVIEWS
 
-NE Campground Reviews is a review application that provides information and reviews for campground around the Northeast. Devise was used to handle user authentication and authorization. Currently the only role used is "admin" which gives authorized users the ability to create new campgrounds, update existing campgrounds, and add/edit camper modifications.
+NE Campground Reviews is a campground review app that provides information and reviews for campground around the Northeast. Devise was used to handle user authentication and authorization. Currently the only role used is "admin" which gives authorized users the ability to create new campgrounds, update existing campgrounds, and add/edit camper modifications.
 
 This application also uses ActiveRecord. Images are stored in AWS S3 Cloud Storage.
 
 [See the deployed application here](https://necampgroundreviews.com/)
 
+https://www.codeship.io/projects/{{status_id}}/status?branch={{branch}})](https://www.codeship.io/projects/{{project_id}})
 
 ## Built with
 - [Ruby on Rails](https://guides.rubyonrails.org/v5.2/)
