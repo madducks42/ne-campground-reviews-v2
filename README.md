@@ -6,7 +6,7 @@ This application also uses ActiveRecord. Images are stored in AWS S3 Cloud Stora
 
 [See the deployed application here](https://necampgroundreviews.com/)
 
-https://www.codeship.io/projects/{{status_id}}/status?branch={{branch}})](https://www.codeship.io/projects/{{project_id}})
+[![Codeship Status for madducks42/ne-campground-reviews-v2](https://app.codeship.com/projects/3e51f287-721b-4380-881a-0d056604d231/status?branch=main)](https://app.codeship.com/projects/450648)
 
 ## Built with
 - [Ruby on Rails](https://guides.rubyonrails.org/v5.2/)
