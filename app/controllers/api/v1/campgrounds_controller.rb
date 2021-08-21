@@ -40,12 +40,15 @@ class Api::V1::CampgroundsController < ApiController
 
   end
 
+  #UPDATE /v1/campgrounds#update
   def edit
     render json: Campground.find(params[:id]), serializer: CampgroundUpdateSerializer
 
   end
 
+  #UPDATE /v1/campgrounds#update
   def update
+    binding.pry
     campground = Campground.find(params[:id])
 
     if campground.update(campground_params)
