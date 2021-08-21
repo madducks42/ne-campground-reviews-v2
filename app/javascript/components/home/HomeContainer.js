@@ -108,7 +108,7 @@ const HomeContainer = () => {
           {userIsAdmin === true && (
             <div className="columns devise-flex">
               <Link className="button devise-buttons" to="/campgrounds/new">
-                Update Campground
+                Add New Campground
               </Link>
             </div>
           )}
