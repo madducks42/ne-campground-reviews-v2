@@ -11,10 +11,7 @@ RSpec.describe "Campgrounds", type: :request do
 
     it 'should return the campground names, descriptions, locations and amentities from the database' do
       campground_1 = create(:campground_1)
-      # campground_2 = create(:campground_2)
-      # binding.pry
       get "/api/v1/campgrounds/#{campground_1.id}"
-      # get :show, params: {id: campground_1.id}
       
       returned_response = JSON.parse(response.body)
       

@@ -48,7 +48,6 @@ class Api::V1::CampgroundsController < ApiController
 
   #UPDATE /v1/campgrounds#update
   def update
-    binding.pry
     campground = Campground.find(params[:id])
 
     if campground.update(campground_params)
