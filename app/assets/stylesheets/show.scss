@@ -1,7 +1,7 @@
 // Campground Images
 @media screen and (min-width: 641px){
   .slider-image {
-    width: 1000px;
+    width: auto;
     height: 600px;
     border-radius: 10px;
   }
@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 640px){
   .slider-image {
-    width: 100%;
+    width: auto;
     height: auto;
     border-radius: 10px;
   }
