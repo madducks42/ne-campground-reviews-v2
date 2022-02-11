@@ -4,7 +4,7 @@ NE Campground Reviews is a campground review app that provides information and r
 
 This application also uses ActiveRecord. Images are stored in AWS S3 Cloud Storage.
 
-[See the deployed application here](https://necampgroundreviews.com/)
+[See the deployed application here](https://ne-campground-reviews-v2.herokuapp.com/)
 
 [![Codeship Status for madducks42/ne-campground-reviews-v2](https://app.codeship.com/projects/3e51f287-721b-4380-881a-0d056604d231/status?branch=main)](https://app.codeship.com/projects/450648)
 
